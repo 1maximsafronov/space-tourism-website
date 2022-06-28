@@ -1,0 +1,35 @@
+@use "./variables.scss";
+
+// <<<---Media-mixins--->>>
+@mixin media-mobile-only {
+  @media (max-width: variables.$mobile-width) {
+    @content;
+  }
+}
+
+@mixin media-tablet {
+  @media (min-width: variables.$tablet-width) {
+    @content;
+  }
+}
+
+@mixin media-desktop {
+  @media (min-width: variables.$desktop-width) {
+    @content;
+  }
+}
+
+@mixin media-castom($width) {
+  @media (min-width: $width) {
+    @content;
+  }
+}
+
+/*  <<<---Пример использования Media-mixins--->>>
+.header {
+  width:100px;
+  @include media-tablet {
+    width: 500px;
+  }
+}
+*/

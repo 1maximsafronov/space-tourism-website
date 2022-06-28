@@ -1,0 +1,29 @@
+@use "./variables.scss";
+
+html {
+  box-sizing: border-box;
+  min-width: variables.$mobile-width;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  min-width: variables.$mobile-width;
+  background-color: #0b0d17;
+  color: #d0d6f9;
+  font-family: variables.$font-primary;
+  font-size: 18px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
