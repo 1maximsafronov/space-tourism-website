@@ -1,0 +1,26 @@
+@use "styles/helpers.scss" as *;
+
+.page {
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+.page--home {
+  background-image: url("../../assets/home/background-home-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+  background-size: cover;
+}
+
+@include media-tablet {
+  .page--home {
+    background-image: url("../../assets/home/background-home-tablet.jpg");
+  }
+}
+
+@include media-desktop {
+  .page--home {
+    background-image: url("../../assets/home/background-home-desktop.jpg");
+    background-position: 100% 0;
+  }
+}

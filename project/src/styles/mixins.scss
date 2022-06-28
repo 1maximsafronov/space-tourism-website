@@ -2,7 +2,7 @@
 
 // <<<---Media-mixins--->>>
 @mixin media-mobile-only {
-  @media (max-width: variables.$mobile-width) {
+  @media (max-width: (variables.$tablet-width - 1)) {
     @content;
   }
 }

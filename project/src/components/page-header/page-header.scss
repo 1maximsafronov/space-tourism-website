@@ -1,0 +1,70 @@
+@use "styles/helpers.scss" as *;
+
+.page-header {
+  padding-top: 24px;
+  padding-right: 24px;
+  padding-left: 24px;
+}
+
+.page-header__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.page-header__logo {
+  width: 40px;
+  height: 40px;
+  margin: 0;
+}
+
+.page-header__logo-image {
+  display: block;
+
+  width: 40px;
+  height: 40px;
+}
+
+@include media-tablet {
+  .page-header {
+    padding: 0;
+    padding-left: 39px;
+  }
+  .page-header__logo {
+    width: 48px;
+    height: 48px;
+  }
+
+  .page-header__logo-image {
+    width: 48px;
+    height: 48px;
+  }
+}
+
+@include media-desktop {
+  .page-header {
+    padding-top: 40px;
+    padding-left: 55px;
+  }
+
+  .page-header__wrapper {
+    position: relative;
+    &::before {
+      position: absolute;
+      z-index: 1;
+      right: 800px;
+      left: 112px;
+
+      display: block;
+
+      height: 1px;
+
+      content: "";
+
+      opacity: 0.25;
+      background: #ffffff;
+
+      mix-blend-mode: normal;
+    }
+  }
+}
