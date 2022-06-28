@@ -2,7 +2,7 @@ import './home-page-content.scss';
 
 function HomePageContent():JSX.Element {
   return (
-    <div className="home-page-content">
+    <section className="home-page-content">
       <div className="home-page-content__wrapper">
         <h1 className="home-page-content__title">
             So, you want to travel to
@@ -19,7 +19,7 @@ function HomePageContent():JSX.Element {
       <a href="/destination" className="home-page-content__explore">
             Explore
       </a>
-    </div>
+    </section>
   );
 }
 
