@@ -17,16 +17,16 @@ function DestinationPage():JSX.Element {
         <div className="destination-content__info">
           <div className="destination-content__tabs">
             <button className="destination-content__tab destination-content__tab--active" type="button">
-            Moon
+              Moon
             </button>
             <button className="destination-content__tab" type="button">
-            Mars
+              Mars
             </button>
             <button className="destination-content__tab" type="button">
-            Europa
+              Europa
             </button>
             <button className="destination-content__tab" type="button">
-            Titan
+              Titan
             </button>
           </div>
           <h2 className="destination-content__name">Moon</h2>
@@ -36,12 +36,14 @@ function DestinationPage():JSX.Element {
   by visiting the Luna 2 and Apollo 11 landing sites.
           </p>
           <div className="destination-content__stats">
-            <p className="destination-content__stats-key">Avg. distance</p>
-            <p className="destination-content__stats-value">384,400 km</p>
-          </div>
-          <div className="destination-content__stats">
-            <p className="destination-content__stats-key">Est. travel time</p>
-            <p className="destination-content__stats-value">3 days</p>
+            <div className="destination-content__stats-item">
+              <p className="destination-content__stats-key">Avg. distance</p>
+              <p className="destination-content__stats-value">384,400 km</p>
+            </div>
+            <div className="destination-content__stats-item">
+              <p className="destination-content__stats-key">Est. travel time</p>
+              <p className="destination-content__stats-value">3 days</p>
+            </div>
           </div>
         </div>
       </main>

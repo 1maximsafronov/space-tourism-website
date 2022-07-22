@@ -2,25 +2,25 @@
 
 // <<<---Media-mixins--->>>
 @mixin media-mobile-only {
-  @media (max-width: (variables.$tablet-width - 1)) {
+  @media screen and (max-width: (variables.$tablet-width - 1)) {
     @content;
   }
 }
 
 @mixin media-tablet {
-  @media (min-width: variables.$tablet-width) {
+  @media screen and (min-width: variables.$tablet-width) {
     @content;
   }
 }
 
 @mixin media-desktop {
-  @media (min-width: variables.$desktop-width) {
+  @media screen and (min-width: variables.$desktop-width) {
     @content;
   }
 }
 
 @mixin media-castom($width) {
-  @media (min-width: $width) {
+  @media screen and (min-width: $width) {
     @content;
   }
 }
