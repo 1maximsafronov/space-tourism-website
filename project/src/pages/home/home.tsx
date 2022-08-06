@@ -1,10 +1,9 @@
 import './home-page-content.scss';
-import PageHeader from 'components/page-header/page-header';
+import Layout from 'pages/layout/layout';
 
 function HomePage():JSX.Element {
   return (
-    <div className="page page--home">
-      <PageHeader />
+    <Layout page="home">
       <main className="page-content home-page-content">
         <div className="home-page-content__wrapper">
           <h1 className="home-page-content__title">
@@ -23,7 +22,7 @@ function HomePage():JSX.Element {
             Explore
         </a>
       </main>
-    </div>
+    </Layout>
   );
 }
 

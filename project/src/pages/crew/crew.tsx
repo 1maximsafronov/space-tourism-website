@@ -1,9 +1,8 @@
-import PageHeader from 'components/page-header/page-header';
+import Layout from 'pages/layout/layout';
 
 function CrewPage():JSX.Element {
   return (
-    <div className="page page--crew">
-      <PageHeader />
+    <Layout page="crew">
       <main className="page-content crew-content">
         <h1>02 Meet your crew</h1>
 
@@ -43,7 +42,7 @@ function CrewPage():JSX.Element {
           </li>
         </ul>
       </main>
-    </div>
+    </Layout>
   );
 }
 

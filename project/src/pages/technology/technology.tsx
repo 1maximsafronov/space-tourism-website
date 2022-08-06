@@ -1,9 +1,8 @@
-import PageHeader from 'components/page-header/page-header';
+import Layout from 'pages/layout/layout';
 
 function TechnologyPage():JSX.Element {
   return (
-    <div className="page page--technology">
-      <PageHeader />
+    <Layout page='technology'>
       <main className="page-content crew-content">
         <h1>03 Space launch 101</h1>
 
@@ -38,7 +37,7 @@ function TechnologyPage():JSX.Element {
           </li>
         </ul>
       </main>
-    </div>
+    </Layout>
   );
 }
 
