@@ -1,6 +1,26 @@
 @use "styles/helpers.scss" as *;
 
-.home-page-content {
+.home-page {
+  background-image: url("../../assets/home/background-home-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+  background-size: cover;
+}
+
+@include media-tablet {
+  .home-page {
+    background-image: url("../../assets/home/background-home-tablet.jpg");
+  }
+}
+
+@include media-desktop {
+  .home-page {
+    background-image: url("../../assets/home/background-home-desktop.jpg");
+    background-position: 100% 0;
+  }
+}
+
+.home-page__content {
   display: flex;
   flex-direction: column;
 
@@ -15,7 +35,7 @@
   text-align: center;
 }
 
-.home-page-content__title {
+.home-page__title {
   margin: 0;
   margin-bottom: 16px;
 
@@ -27,7 +47,7 @@
   line-height: 19px;
 }
 
-.home-page-content__big-title {
+.home-page__big-title {
   display: block;
 
   margin-top: 16px;
@@ -39,7 +59,7 @@
   line-height: 100px;
 }
 
-.home-page-content__desc {
+.home-page__desc {
   margin: 0;
   margin-bottom: 50px;
   margin-bottom: 81px;
@@ -49,7 +69,7 @@
   line-height: 25px;
 }
 
-.home-page-content__explore {
+.home-page__explore-btn {
   display: flex;
   align-items: center;
   align-self: center;
@@ -81,7 +101,7 @@
 }
 
 @include media-tablet {
-  .home-page-content {
+  .home-page__content {
     width: 768px;
     padding-top: 106px;
     padding-right: 159px;
@@ -89,7 +109,7 @@
     padding-left: 159px;
   }
 
-  .home-page-content__title {
+  .home-page__title {
     margin-bottom: 24px;
 
     letter-spacing: 3.375px;
@@ -98,21 +118,21 @@
     line-height: 24px;
   }
 
-  .home-page-content__big-title {
+  .home-page__big-title {
     margin-top: 24px;
 
     font-size: 150px;
     line-height: 150px;
   }
 
-  .home-page-content__desc {
+  .home-page__desc {
     margin-bottom: 156px;
 
     font-size: 16px;
     line-height: 28px;
   }
 
-  .home-page-content__explore {
+  .home-page__explore-btn {
     width: 242px;
     height: 242px;
 
@@ -124,7 +144,7 @@
 }
 
 @include media-desktop {
-  .home-page-content {
+  .home-page__content {
     display: flex;
     align-items: flex-end;
     flex-direction: row;
@@ -139,30 +159,31 @@
 
     text-align: left;
   }
-  .home-page-content__wrapper {
+
+  .home-page__wrapper {
     width: 450px;
   }
 
-  .home-page-content__title {
+  .home-page__title {
     letter-spacing: 4.725px;
 
     font-size: 28px;
     line-height: 34px;
   }
 
-  .home-page-content__big-title {
+  .home-page__big-title {
     font-size: 150px;
     line-height: 172px;
   }
 
-  .home-page-content__desc {
+  .home-page__desc {
     margin: 0;
 
     font-size: 18px;
     line-height: 32px;
   }
 
-  .home-page-content__explore {
+  .home-page__explore-btn {
     width: 274px;
     height: 274px;
   }

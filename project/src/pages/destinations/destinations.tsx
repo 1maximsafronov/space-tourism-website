@@ -1,13 +1,14 @@
 import './destination-page-content.scss';
 import Moon from 'assets/destination/image-moon.png';
-import Layout from 'pages/layout/layout';
+import PageHeader from 'components/page-header/page-header';
 
-function DestinationPage():JSX.Element {
+function DestinationsPage():JSX.Element {
   return (
-    <Layout page="destination">
+    <div className="page page--destination">
+      <PageHeader />
       <main className="page-content destination-content">
-        <h1 className="destination-content__title">
-          <span className="destination-content__title-number">01</span>
+        <h1 className="page-title">
+          <span className="page-title__number">01</span>
         Pick your destination
         </h1>
         <p className="destination-content__picture">
@@ -46,8 +47,8 @@ function DestinationPage():JSX.Element {
           </div>
         </div>
       </main>
-    </Layout>
+    </div>
   );
 }
 
-export default DestinationPage;
+export default DestinationsPage;
